@@ -1,0 +1,53 @@
+// Typography
+$font-stack: Helvetica, sans-serif;
+$font-size: 16px;
+$line-height: 24px;
+
+// Colors
+$black: #131518; // default button
+$turquoise: #35c092; //hover
+$gray: #c2c2c2;
+$lt-gray: #f2f2f2; // disabled button
+
+
+
+body {
+  margin: 0, 16px;
+  padding: 0;
+  font-family: $font-stack;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+button {
+  background-color: $black;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+
+  .hover {
+    background-color: $turquoise;
+  }
+
+  .disabled {
+    background-color: $lt-gray;
+    color: $gray;
+  }
+}
