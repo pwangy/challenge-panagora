@@ -2,7 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
-const IconPlugin = require('svg-sprite-webpack-plugin').plugin
 
 module.exports = (_, argv) => {
   const isDev = argv.mode === 'development'
@@ -66,9 +65,16 @@ module.exports = (_, argv) => {
           },
         },
         {
-          test: /\.svg$/,
-          loader: 'svg-sprite-loader',
-        },
+          test: /\.(png|jp(e*)g|svg|gif)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: 'images/[hash]-[name].[ext]',
+              },
+            },
+          ],
+        },  
       ],
     },
   }
