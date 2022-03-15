@@ -14,9 +14,9 @@ export const App = () => {
         <Header />
         <Nav />
         <Switch>
-          <Route exact path='/'><Products /></Route>
-          <Route exact path='/products/:slug'><Product /></Route>
-          <Route exact path='/about'><About /></Route>
+          <Route exact path='/' element={<Products />}><Products /></Route>
+          <Route exact path='/products/:slug' element={<Products />}><Product /></Route>
+          <Route exact path='/about' element={<About />}><About /></Route>
         </Switch>
       </div>
     </Router>

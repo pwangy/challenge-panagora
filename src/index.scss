@@ -40,6 +40,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+  background-color: lightskyblue;
 }
 
 .wrapper {
@@ -51,6 +52,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-self: center;
+  background-color: lavenderblush;
 }
 
 .container {
@@ -62,6 +64,7 @@ h3 {
   justify-content: center;
   align-content: center;
   align-self: center;
+  background:mistyrose;
 }
 
 .card {
@@ -88,6 +91,7 @@ article {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  background: rosybrown;
 }
 
 .button {
@@ -115,6 +119,7 @@ nav {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-evenly;
+  background-color: snow;
 
   ul {
     list-style: none;
