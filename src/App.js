@@ -15,7 +15,8 @@ export const App = () => {
         <Nav />
         <Switch>
           <Route exact path='/' element={<Products />}><Products /></Route>
-          <Route exact path='/products/:slug' element={<Products />}><Product /></Route>
+          <Route exact path='/products' element={<Products />}><Products /></Route>
+          <Route exact path='/products/:slug' element={<Product />}><Product /></Route>
           <Route exact path='/about' element={<About />}><About /></Route>
         </Switch>
       </div>

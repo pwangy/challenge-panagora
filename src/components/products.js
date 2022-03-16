@@ -4,7 +4,6 @@ import items from '../data/products.json'
 import { ProdCard } from './ProdCard'
 
 export const Products = () => {
-
   return (
     <>
       <div className='container'>

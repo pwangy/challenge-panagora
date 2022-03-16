@@ -24,23 +24,25 @@ body {
   div {
     margin: 0;
     padding: 0;
-    border: 2px solid lightcyan;
+    // border: 2px solid lightcyan;
   }
 }
 
 h1 {
   font-size: 40px;
-  background-color: hotpink;
+  // background-color: hotpink;
 }
 
 h2 {
   font-size: 32px;
-  background-color: green;
+  text-transform: uppercase;
+  // background-color: green;
 }
 
 h3 {
   font-size: 24px;
-  background-color: lightskyblue;
+  text-transform: uppercase;
+  // background-color: lightskyblue;
 }
 
 .wrapper {
@@ -52,7 +54,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-self: center;
-  background-color: lavenderblush;
+  // background-color: lavenderblush;
 }
 
 .container {
@@ -64,7 +66,7 @@ h3 {
   justify-content: center;
   align-content: center;
   align-self: center;
-  background:mistyrose;
+  // background:mistyrose;
 }
 
 .card {
@@ -91,7 +93,12 @@ article {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  background: rosybrown;
+  // background: rosybrown;
+}
+
+p {
+  align-items: left;
+  padding: 1em 6em;
 }
 
 .button {
@@ -111,15 +118,15 @@ article {
 
 /* Nav Styles */
 nav {
-  height: 90px;
-  margin: 0;
+  height: 50px;
+  margin-bottom: 50px;
   padding: 12px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-evenly;
-  background-color: snow;
+  // background-color: snow;
 
   ul {
     list-style: none;

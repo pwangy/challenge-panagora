@@ -6,15 +6,7 @@
 - `products.json`
 
 ## Instructions
-The idea here is to build a single page application with JavaScript.
-
-Implement style guide.
-
 In `data/` you will find a couple of json files that will act as your "backend". `products.json` holds a list of simplified product representations and `<PRODUCT_ID>.json` is an actual product representation.
-
-
-:: PRODUCT LIST
-On one page we want all products rendered. 
 
 
 :: INDIVIDUAL PRODUCT PAGE
