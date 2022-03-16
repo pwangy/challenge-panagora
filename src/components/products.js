@@ -5,12 +5,10 @@ import { ProdCard } from './ProdCard'
 
 export const Products = () => {
   return (
-    <>
-      <div className='container'>
-        {items.map((item) => (
-          <ProdCard key={item.id} {...item} />
-        ))}
-      </div>
-    </>
+    <div className='container'>
+      {items.map((item) => (
+        <ProdCard key={item.id} {...item} />
+      ))}
+    </div>
   )
 }

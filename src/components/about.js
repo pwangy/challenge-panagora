@@ -10,7 +10,6 @@ export const About = () => {
       <h2>Values</h2>
         <p>Donec ornare sem non arcu mollis dictum. Integer vulputate odio sit amet mauris ullamcorper sagittis. Curabitur quis lacus ac quam pellentesque malesuada fermentum eu nunc. Sed elit libero, scelerisque eget arcu sit amet, consequat condimentum ante.</p>
 
-
       <h3>People First</h3>
         <p>Nunc a euismod nisi. Duis elementum maximus odio, ac sollicitudin leo congue sed. Aenean non velit in quam bibendum maximus sit amet eu ex. Fusce rutrum iaculis metus, eu blandit felis aliquet a. In hac habitasse platea dictumst. Integer rutrum ornare feugiat. Quisque id bibendum metus, nec iaculis enim. Vivamus tempus lectus nec mi pulvinar, blandit aliquam elit vehicula.</p>
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
 export const ProdCard = ({ id, name, price, currency, slug, thumbnail }) => {
   return (
     <Link key={id} to={`/products/${slug}`}>
