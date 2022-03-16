@@ -38,11 +38,13 @@ module.exports = (_, argv) => {
       path: path.resolve(__dirname, 'build'),
       filename: '[name].[contenthash].js',
       chunkFilename: '[id].[chunkhash].js',
+      publicPath: '/',
     },
     devServer: {
       contentBase: path.join(__dirname, 'src'),
       port: 3000,
       hot: true,
+      historyApiFallback: true,
     },
     module: {
       rules: [
