@@ -1,16 +1,18 @@
 # Panagora Code Test
 
-## What is this?
-A code test from Panagora as part of their recruitment process. If you're curious to read the assignment directions look at the ReadMe under `design`. 
+## What's here?
 
-## Completed Tasks
-- Build a single page appliction with JavaScript using the starter files provided.
+- `design/` styleguide and site design
+- `images/` a couple of product images
+- `static/` static assets that you will need
+- `<PRODUCT_ID>.json`
+- `products.json`
+- `webpack.config.js` webpack config with dev server
+- `index.html` a bare minumum html template
+- `index.js` empty index.js
+- `index.scss` empty index.scss
 
-
-
-
-
-
+## Instructions
 
 The idea here is to build a single page application with JavaScript. We have provided a set of files and assets that we want you to use to achieve this (see above).
 
