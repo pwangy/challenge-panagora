@@ -1,33 +1,14 @@
 # Panagora Code Test
 
-## What's here?
+## What is this?
+A code test from Panagora as part of their recruitment process. If you're curious to read the assignment directions look at the ReadMe under `design`. 
 
-- `design/` styleguide and site design
-- `images/` a couple of product images
-- `static/` static assets that you will need
-- `<PRODUCT_ID>.json`
-- `products.json`
-- `webpack.config.js` webpack config with dev server
-- `index.html` a bare minumum html template
-- `index.js` empty index.js
-- `index.scss` empty index.scss
-
-## Instructions
-
-The idea here is to build a single page application with JavaScript. We have provided a set of files and assets that we want you to use to achieve this (see above).
-
-First run `npm install`. We have provided you with a set of npm packages and a `webpack.config.js` to get started. Take a peak at `package.json` to see available commands.
-
-You will find the styleguide and site design in `design/`. We want this implemented.
-
-In `data/` you will find a couple of json files that will act as your "backend". `products.json` holds a list of simplified product representations and `<PRODUCT_ID>.json` is an actual product representation.
-
-On one page we want all products rendered. When clicking on one of the products we want to see a product page with full product info and a form to add the product to a cart. Layout this page however you want but use the design elements from the styleguide.
-
-Feel free to use any template language of your choice i.e Nunjucks, EJS, Mustache or perhaps Pug. Template literals is also fine.
-
-**Important:** Please tell us how much time you spent on this and describe your work to us! Just a couple of sentences of each step you took or if something was unclear and how you solved it.
-
-## Tips
-
-We will only test your site in the newest Chrome/Firefox browser so feel free to use `html5`, `css3`, `es6`, `canvas` or anything else you need. If you need to use a nightly build don't forget to tell us!
+## Completed Tasks and Approach
+- Build a single page appliction with JavaScript using the starter files provided.
+- Added necessary libraries for React and React Router.
+- Fussed with webpack.config and learned about adding to this file. This bit was important because I needed to be able to see what the app looked like as I was working on it. Figuring out Webpack took a good chunk of time since it wasn't something I've worked with in development as much or have had to set up so it was a good opportunity to learn about it. More or less I spent this time searching online for the error messages I received and worked things out from there. 
+Once I was able to see a local instance of my app, I set about building out components and focused on functionality (navigation works, fetching data and rendering it on a page works, etc). Styling was the step I started in on after getting all the elements rendered successfully.
+- Defined the routes for Router for basic navigation and created the Navigation components.
+- Set up a Products page to list the array of products and bring in images and descriptive info. 
+- Set up how an individual product page should render in the Product component. 
+- Learned about SCSS structure implemented the defined styles found in the style guide.
