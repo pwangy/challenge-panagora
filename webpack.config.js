@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const { NetlifyPlugin } = require('netlify-webpack-plugin');
 
 module.exports = (_, argv) => {
   const isDev = argv.mode === 'development'
@@ -15,9 +16,9 @@ module.exports = (_, argv) => {
     new NetlifyPlugin({
       redirects: [
         {
-          from: "/products/:slug",
-          to: "/index.html",
-          status: 301,
+          from: "/*",
+          to: ".index.html",
+          status: 200,
           force: false,
           query: {
             path: ":path",
