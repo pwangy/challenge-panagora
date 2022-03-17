@@ -2,7 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
-const { NetlifyPlugin } = require('netlify-webpack-plugin');
 
 module.exports = (_, argv) => {
   const isDev = argv.mode === 'development'
@@ -12,33 +11,6 @@ module.exports = (_, argv) => {
       template: './src/index.html',
       inject: false,
     }),
-
-    new NetlifyPlugin({
-      redirects: [
-        {
-          from: "/*",
-          to: ".index.html",
-          status: 200,
-          force: false,
-          query: {
-            path: ":path",
-          },
-          conditions: {
-            language: ["en","es"],
-            country: ["US"]
-          }
-        },
-        {
-          from: "/api/*",
-          to: "https://us-central1-netlify-intercom.cloudfunctions.net/readHeaders/:splat",
-          status: 200,
-          force: true,
-          conditions: {
-            role: ["admin", "cms"]
-          }
-        }
-      ]
-    })
   ]
 
   if (!isDev) {
